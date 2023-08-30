@@ -1,0 +1,27 @@
+.botao {
+    background-color: var(--azul);
+    border: 1px solid var(--azul);
+    color: var(--branco);
+    font-family: inherit;
+    font-size: var(--fonteGrande);
+    padding: 16px 16px;
+    transition: all 0.5s;        
+}
+
+.botao:hover {
+    background-color: var(--azul80);
+}
+
+
+
+.botao--secundario {
+    background-color: unset;
+    border: 1px solid var(--azul);
+    color: var(--azul);  
+    width: 183px;
+    box-sizing: border-box;        
+}
+
+.botao--secundario:hover {
+    background-color: var(--azul20);
+}

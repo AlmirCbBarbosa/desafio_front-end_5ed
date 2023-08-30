@@ -1,0 +1,26 @@
+.barraPesquisa{
+    background-color: var(--preto05);
+    background-image: url('../../arquivos/imagens/icones/lupa.svg') ;
+    background-repeat: no-repeat;
+    background-position: 385px;
+    border:none;   
+    border-radius: 20px;
+    color: var(--preto50);
+    font-size: var(--fonteMedio);
+    font-family: inherit;
+    
+    width: 393px;
+    padding: 12px 16px;
+    text-align:left;
+}
+
+.barraPesquisa:focus{
+    outline: none;
+}
+
+@media screen and (max-width: 960px){
+    .barraPesquisa{
+        background-position: 264px;
+        width: 272px;
+    }
+}

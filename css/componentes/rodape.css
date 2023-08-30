@@ -1,0 +1,118 @@
+.rodape {
+    background-color:var(--azul10);
+    color: var(--preto);
+    font-family: var(--fontePadrao);
+    font-size: var(--textoGrande);
+}
+
+.rodape__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: var(--titulo1);
+}
+
+
+
+.rodape__navegacao{
+    height: 362px;
+}
+
+.rodape__navegacaoLogo{
+    display: none;
+}
+
+.rodape__listaLinks {    
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+.rodape__ancora {
+    color: inherit;
+    text-decoration: none;
+}
+
+.rodape__formulario{    
+    display: flex;
+    flex-direction: column;    
+    gap: 8px;
+    width: 560px;
+}
+
+.rodape__nomeCampo {
+    font-weight: bold;
+}
+
+.rodape__entrada {
+    display: flex;
+    flex-direction: column;
+}
+
+.rodape__label {
+    background-color: var(--branco);
+    color: var(--preto50);
+    font-size: var(--fontePequena);
+    padding: 8px 8px 4px 8px;
+    width: 100%;
+}
+
+.rodape__caixaEntrada {
+    font-size: var(--fonteGrande);
+    border: none;
+    outline: none;
+    padding: 4px 8px 8px 8px;
+    width: 100%;
+}
+
+.rodape__botaoEnviar {
+    align-self: flex-start;
+}
+
+.rodape__caixaMensagem {
+    border: none;
+    color: var(--preto50);
+    font-family: var(--fontePadrao);
+    font-size: var(--fonteGrande);
+    outline: none;   
+    padding: 8px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1080px){
+    .rodape__formulario{
+        width: 434px;
+    }
+}
+
+@media screen and (max-width: 960px){
+    .rodape__logo{
+        display:none;
+    }
+
+    .rodape__navegacaoLogo{
+        display:block;
+    }    
+}
+
+@media screen and (max-width: 720px){
+    .rodape__container{
+        align-items: center;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .rodape__logo{
+        display:block;
+    }
+
+    .rodape__navegacaoLogo{
+        display:none;
+    } 
+
+    .rodape__formulario{
+        width: 100%;
+    }
+}

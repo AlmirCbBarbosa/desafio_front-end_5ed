@@ -1,0 +1,22 @@
+:root {
+    
+    --preto: #464646;
+    --preto50: #A2A2A2;
+    --preto30: #C8C8C8;
+    --preto05: #f5f5f5;
+    --azul: #2A7AE4;
+    --azul80: #5595E9;
+    --azul20: #D4E4FA;
+    --azul10: #EAF2FD;
+    --branco: #FFF;
+
+    --fontePadrao: 'Raleway' , sans-serif;
+    --fontePequena: 12px;
+    --fonteMedio: 14px;
+    --fonteGrande: 16px;
+    --fonteDestaque: 22px;
+
+    --titulo2: 32px;
+    --titulo1: 52px;
+    
+}

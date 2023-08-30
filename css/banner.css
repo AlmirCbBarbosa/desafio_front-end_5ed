@@ -1,0 +1,39 @@
+.banner{
+    background-image: url('../arquivos/imagens/cogumeloMario.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    color: var(--branco);
+    height: 352px;  
+    margin-bottom: var(--titulo1)  ;
+    width: 100%;    
+}
+
+.banner__grupoElementos{
+    position: absolute;
+    left: 32px;
+    bottom: 0;
+    padding-bottom: 32px;
+}
+
+.banner__titulo {    
+    font-size: var(--titulo1);
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.banner__frase {
+    font-size: var(--fonteDestaque);
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+
+@media screen and (max-width: 720px){
+    .banner__titulo{
+        font-size: var(--fonteDestaque);
+    }
+
+    .banner__frase{
+        font-size: var(--fontePequena);
+    }
+}
