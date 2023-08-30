@@ -25,3 +25,7 @@
 .botao--secundario:hover {
     background-color: var(--azul20);
 }
+
+.botao--desligado{
+    display: none;
+}
