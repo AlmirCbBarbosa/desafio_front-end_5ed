@@ -1,0 +1,73 @@
+.formularioProduto{
+    background-color: var(--preto05);
+    color: var(--preto);
+    font-family: inherit; 
+    padding: 64px 32px;   
+}
+
+.formularioProduto__campo {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 768px;
+    margin: 0 auto;    
+}
+
+.formularioProduto__tituloCampo {
+    font-size: var(--titulo2);
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.formularioProduto__entrada {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.formularioProduto__label {
+    background-color: var(--branco);
+    box-sizing: border-box;
+    color: var(--preto50);
+    font-size: var(--fontePequena);
+    padding-top: 4px;
+    padding-left: 4px;
+    width: 100%;
+}
+
+.formularioProduto__caixaEntrada {
+    border: none;
+    box-sizing: border-box;
+    font-size: var(--fonteGrande);
+    outline: none;
+    padding: 4px 4px;
+    width: 100%;
+}
+
+.formularioProduto__caixaMensagem {
+    border: none;
+    box-sizing: border-box;
+    font-size: var(--fonteGrande);
+    min-height: 82px;
+    outline: none;
+    padding: 4px 4px;
+}
+
+.formularioProduto__caixaMensagem::placeholder {    
+    color: var(--preto50); 
+    font-size: var(--fontePequena);   
+}
+
+@media screen and (max-width: 840px) {
+    .formularioProduto__tituloCampo {
+        font-size: var(--fonteDestaque);
+        margin-bottom: 12px;        
+    } 
+}
+
+@media screen and (max-width: 480px){
+    .formularioProduto {
+        padding: 64px 16px;
+    }
+}
