@@ -41,6 +41,16 @@
     font-size: var(--fonteGrande);
 }
 
+.formularioDeLogin__botaoEnviarDiv{
+    margin: 25px auto 0 auto;
+    width: 423px;
+}
+
+.formularioDeLogin__botaoEnviar{
+    display: block;
+    width:100%;
+}
+
 @media screen and (max-width: 840px){
     .formularioDeLogin__campo{
         align-items: center;
@@ -48,11 +58,18 @@
         width: 275px;
     }
 
+    .formularioDeLogin__botaoEnviarDiv{
+        margin: 16px auto 0 auto;
+        width: 275px;
+    }
+
     .formularioDeLogin__tituloDeCampo{
         margin-bottom: 16px;
     }
-
-    .formularioDeLogin__botaoEnviar{
+    
+    .formularioDeLogin__botaoEnviar
+    {       
+        margin: 0 auto;
         width: 109px;
     }
 }

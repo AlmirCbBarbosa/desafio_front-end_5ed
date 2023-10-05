@@ -1,0 +1,12 @@
+{
+  "name": "desafio_front-end_5ed",
+  "version": "1.0.0",
+  "description": "Desafio front-end 5ª edição da Alura.",
+  "type":"module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Almir de Lima Barbosa",
+  "license": "ISC"
+}
