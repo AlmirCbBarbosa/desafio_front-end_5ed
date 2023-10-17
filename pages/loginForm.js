@@ -1,17 +1,26 @@
+import IrPaginaAdministrador from "../scripts/IrPaginaAdministrador.js";
+
 const entradasFormularioLogin = document.querySelectorAll("[required]");
+const formularioLogin = document.querySelector("#formularioLogin");
 
 
 entradasFormularioLogin.forEach(campo =>{
     campo.addEventListener("blur", ()=> {
-        ValidarCampo(campo);
-        console.log(campo.validity); // teste pode apagar
+        ValidarCampo(campo);        
     })
 
     campo.addEventListener("invalid", evento =>{
         evento.preventDefault();
-        console.log(`O campo com de nome ${campo.name} não foi validado pelo sistema`);
-    });
+        console.log(`O campo de nome ${campo.name} não foi validado pelo sistema`);
+    });    
 })
+
+formularioLogin.addEventListener('submit', evento =>{
+    evento.preventDefault();    
+    
+    EnviarInformacao(evento);
+    IrPaginaAdministrador();
+});
 
 const VerificarErros = [
     'valueMissing',
@@ -40,4 +49,13 @@ function ValidarCampo(campo){
             window.alert(mensagensErro[campo.name][erro]);
         }
     } )
+}
+
+function EnviarInformacao(evento){
+    const listaInformacoes = {
+        "email": evento.target.elements["Email"].value,
+        "senha": evento.target.elements["Senha"].value
+    }
+    
+    localStorage.setItem("usuario", JSON.stringify(listaInformacoes)); // manda para o storange mas podia mandar para um banco de dados
 }
