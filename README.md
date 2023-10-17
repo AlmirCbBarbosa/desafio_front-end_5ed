@@ -5,3 +5,5 @@
 
 
 criar funções para a validação de email e senha. Estrutura ja feitas tais como evento 'blur' e 'invalid'.
+
+criar funções para a validação de email e senha. Estrutura ja feitas tais como evento 'blur' e 'invalid'.
