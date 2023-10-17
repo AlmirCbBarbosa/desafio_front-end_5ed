@@ -1,10 +1,10 @@
 const entradasFormularioLogin = document.querySelectorAll("[required]");
 
-console.log(entradasFormularioLogin[1].value.length);
 
 entradasFormularioLogin.forEach(campo =>{
     campo.addEventListener("blur", ()=> {
         ValidarCampo(campo);
+        console.log(campo.validity); // teste pode apagar
     })
 
     campo.addEventListener("invalid", evento =>{
@@ -13,13 +13,31 @@ entradasFormularioLogin.forEach(campo =>{
     });
 })
 
+const VerificarErros = [
+    'valueMissing',
+    'toShort',
+    'patternMismatch'
+]
+
+const mensagensErro = {
+    Email:{
+        valueMissing: "O campo de email não pode ficar vazio.",
+        tooShort: "O campo de email possui pouco caracteres.",
+        patternMismatch: "A informação inserida não correponde a um email válido."
+    },
+    Senha:{
+        valueMissing: "O campo de senha não pode ficar vazio.",
+        tooShort: "O campo de senha possui pouco caracteres.",
+        patternMismatch: "A informação inserida não correponde a uma senha segura."
+    }
+}
+
 
 function ValidarCampo(campo){
-    if(campo.name == "Email" && campo.value.length >= 7){
-        console.log("vamos validar a entrada de Email");//apagar e criar função para validar email
-    }
-
-    if(campo.name == "Senha" && campo.value.length >= 8){
-        console.log("vamos validar a entrada de Senha"); // apagar e criar para validar senha
-    }
+    let mensagem = "";
+    VerificarErros.forEach( erro =>{
+        if(campo.validity[erro]){
+            window.alert(mensagensErro[campo.name][erro]);
+        }
+    } )
 }
