@@ -4,6 +4,5 @@
 > Semana atual: 3 e 4 semanas
 
 
-criar funções para a validação de email e senha. Estrutura ja feitas tais como evento 'blur' e 'invalid'.
+construindo validação do formulário fale conosco
 
-criar funções para a validação de email e senha. Estrutura ja feitas tais como evento 'blur' e 'invalid'.
