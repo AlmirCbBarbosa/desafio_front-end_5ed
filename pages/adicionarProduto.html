@@ -41,26 +41,31 @@
 
                 <div class="formularioProduto__entrada">
                     <label for="formularioProduto__caixaEntradaURL" class="formularioProduto__label">URL da imagem</label>
-                    <input type="url" class="formularioProduto__caixaEntrada" id="formularioProduto__caixaEntradaURL">
+                    <input type="url" class="formularioProduto__caixaEntrada" id="formularioProduto__caixaEntradaURL" name="imagem">
+                    <p class="formularioProduto__mensagemErro">erro produtoImagem</p>
                 </div>
 
                 <div class="formularioProduto__entrada">
                     <label for="formularioProduto__caixaEntradaCategoria" class="formularioProduto__label">Categoria</label>
-                    <input type="text" class="formularioProduto__caixaEntrada" id="formularioProduto__caixaEntradaCategoria">
+                    <input type="text" class="formularioProduto__caixaEntrada" id="formularioProduto__caixaEntradaCategoria" name="categoria">
+                    <p class="formularioProduto__mensagemErro">erro produtoCategoria</p>
                 </div>
 
                 <div class="formularioProduto__entrada">
                     <label for="formularioProduto__caixaEntradaNomeProduto" class="formularioProduto__label">Nome do produto</label>
-                    <input type="text" class="formularioProduto__caixaEntrada" id="formularioProduto__caixaEntradaNomeProduto">
+                    <input type="text" class="formularioProduto__caixaEntrada" id="formularioProduto__caixaEntradaNomeProduto" name="nome">
+                    <p class="formularioProduto__mensagemErro">erro nomeProduto</p>
                 </div>
 
                 <div class="formularioProduto__entrada">
                     <label for="formularioProduto__caixaEntradaPrecoProduto" class="formularioProduto__label">Preço do produto</label>
-                    <input type="number" class="formularioProduto__caixaEntrada" id="formularioProduto__caixaEntradaPrecoProduto">
+                    <input type="number" class="formularioProduto__caixaEntrada" id="formularioProduto__caixaEntradaPrecoProduto" name="preco">
+                    <p class="formularioProduto__mensagemErro">erro produtoPreco</p>
                 </div>
-
-                <textarea class="formularioProduto__caixaMensagem" placeholder="Descriçao do produto" aria-label="Descrição do produto">                 
+                
+                <textarea class="formularioProduto__caixaMensagem" id="formularioProduto__caixaEntradaDescricaoProduto" name="descricao" placeholder="Descriçao do produto" aria-label="Descrição do produto">                 
                 </textarea>
+                <p class="formularioProduto__mensagemErro">erro produtoDescricao</p>
 
                 <button class="formularioProduto__botao botao">Adicionar produto</button>
             </fieldset>
@@ -103,6 +108,7 @@
         </div>      
     </footer>    
     
+    <script type="module" src="./adicionarProduto.js"></script>
     <script type="module" src="../scripts/componentes/formularioFaleConosco.js"></script>
 </body>
 </html>

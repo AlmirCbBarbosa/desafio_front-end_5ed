@@ -59,6 +59,12 @@
     font-size: var(--fontePequena);   
 }
 
+.formularioProduto__mensagemErro{
+    /*display: none;*/
+    font-family: var(--fontePadrao);
+    color: var(--vermelho);
+}
+
 @media screen and (max-width: 840px) {
     .formularioProduto__tituloCampo {
         font-size: var(--fonteDestaque);
