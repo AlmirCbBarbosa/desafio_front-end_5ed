@@ -40,8 +40,10 @@
                 <fieldset class="formularioDeLogin__campo">
                     <legend class="formularioDeLogin__tituloDeCampo">Iniciar Sessão </legend>
                     <input class="formularioDeLogin__entrada"  id="formularioDeLogin__entradaEmail" name="Email" type="text"   placeholder="Escreva seu email" aria-label="Escreva seu email" minLength="7" pattern="^[a-z]{1}[a-z0-9]+@[a-zA-Z0-9]+\.com(.br)?$" required>
+                    <p class="formularioDeLogin__mensagemErro" id="formularioDeLogin__erroEmail"></p>
 
-                    <input class="formularioDeLogin__entrada" id="formularioDeLogin__entradaSenha" name="Senha" type="password" placeholder="Escreva sua senha" aria-label="Escreva sua senha" pattern="^(?=.*[A-Z])(?=.*[\d])(?=.*[@#$%^&+=!]).{6,}$" minlength="6" required>                    
+                    <input class="formularioDeLogin__entrada" id="formularioDeLogin__entradaSenha" name="Senha" type="password" placeholder="Escreva sua senha" aria-label="Escreva sua senha" pattern="^(?=.*[A-Z])(?=.*[\d])(?=.*[@#$%^&+=!]).{6,}$" minlength="6" required>   
+                    <p class="formularioDeLogin__mensagemErro" id="formularioDeLogin__erroSenha"></p>                 
                 </fieldset>
 
                 <div class="formularioDeLogin__botaoEnviarDiv">

@@ -81,6 +81,16 @@
     width: 100%;
 }
 
+.rodape__mensagemDeErro{
+    /*display: none;*/
+    font-family: var(--fontePadrao);
+    color: var(--vermelho);
+}
+
+.rodape__mensagemDeErro--ativado{
+    display: inline;
+}
+
 @media screen and (max-width: 1080px){
     .rodape__formulario{
         width: 434px;

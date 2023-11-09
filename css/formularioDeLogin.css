@@ -51,6 +51,17 @@
     width:100%;
 }
 
+.formularioDeLogin__mensagemErro{
+    /*display: none;*/
+    font-family: var(--fontePadrao);
+    font-size: var(--fonteMedio);
+    color: var(--vermelho);
+}
+
+.formularioDeLogin__mensagemErro--ativado{
+    display: inline;
+}
+
 @media screen and (max-width: 840px){
     .formularioDeLogin__campo{
         align-items: center;

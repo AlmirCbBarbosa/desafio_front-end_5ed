@@ -1,12 +1,14 @@
 import IrPaginaAdministrador from "../scripts/IrPaginaAdministrador.js";
 
 const entradasFormularioLogin = document.querySelectorAll("[required]");
+const alertaErroFormularioLogin = document.querySelectorAll(".formularioDeLogin__mensagemErro");
 const formularioLogin = document.querySelector("#formularioLogin");
 
+console.log(alertaErroFormularioLogin);
 
 entradasFormularioLogin.forEach(campo =>{
     campo.addEventListener("blur", ()=> {
-        ValidarCampo(campo);        
+        ValidarCampo(campo, alertaErroFormularioLogin);        
     })
 
     campo.addEventListener("invalid", evento =>{
@@ -42,11 +44,21 @@ const mensagensErro = {
 }
 
 
-function ValidarCampo(campo){
-    let mensagem = "";
+function ValidarCampo(campo, saidaErros){
+    let index;
+
+    if(campo.name == "Email"){
+        index = 0;
+    } else if( campo.name == "Senha"){
+        index = 1;
+    }
+
+    saidaErros[index].innerText = "";
+
     VerificarErros.forEach( erro =>{
         if(campo.validity[erro]){
-            window.alert(mensagensErro[campo.name][erro]);
+            saidaErros[index].innerText = mensagensErro[campo.name][erro];
+            //window.alert(mensagensErro[campo.name][erro]);
         }
     } )
 }
