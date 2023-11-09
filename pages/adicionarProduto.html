@@ -70,11 +70,11 @@
     <footer class="rodape">
         <div class="rodape__container container">
             <div class="rodape__logo">
-                <img class="rodape__logoImagem" src="../arquivos/imagens/Logo.svg" alt="logo Alura Geek" title="logo Alura Geek">
+                <img class="rodape__logoImagem" src="./arquivos/imagens/Logo.svg" alt="logo Alura Geek" title="logo Alura Geek">
             </div>
             <nav class="rodape__navegacao">
                 <div class="rodape__navegacaoLogo">
-                    <img class="rodape__logoImagem" src="../arquivos/imagens/Logo.svg" alt="logo Alura Geek" title="logo Alura Geek">
+                    <img class="rodape__logoImagem" src="./arquivos/imagens/Logo.svg" alt="logo Alura Geek" title="logo Alura Geek">
                 </div>
                 <ul class="rodape__listaLinks">
                     <li class="rodape__link"><a class="rodape__ancora" href="#">Quem somos nós</a></li>
@@ -85,19 +85,24 @@
                     <li class="rodape__link"><a class="rodape__ancora" href="#">Anuncie aqui</a></li>
                 </ul>
             </nav>
-            <form class="rodape__formulario" method="post">
+            <form class="rodape__formulario" id="formularioFaleConosco" >
                 <legend class="rodape__nomeCampo">Fale conosco</legend>
                 <div class="rodape__entrada">
-                    <label class="rodape__label" for="rodape__iptNome">Nome</label>
-                    <input class="rodape__caixaEntrada" id="rodape__iptNome"  type="text">
+                    <label class="rodape__label"  for="Nome" >Nome</label>
+                    <input class="rodape__caixaEntrada" id="formularioFaleConosco__nome" name="Nome"  type="text" minlength="2" maxlength="40" required entrada-faleConosco>
+                    <p class="rodape__mensagemDeErro" id="formularioFaleConosco__erroNome" ></p>
                 </div>
 
                 <div class="formulario__entrada">
-                    <textarea class="rodape__caixaMensagem" id="" cols="30" rows="10" placeholder="Escreva sua mensagem" aria-label="Escreva sua mensagem"></textarea>
+                    <textarea class="rodape__caixaMensagem" id="formularioFaleConosco__mensagem" name="Mensagem" cols="30" rows="10" placeholder="Escreva sua mensagem" aria-label="Escreva sua mensagem" minlength="20" maxlength="120" required entrada-faleConosco></textarea>
+                    <p class="rodape__mensagemDeErro" id="formularioFaleConosco__erroMensagem" ></p>
                 </div>
 
-                <button class="rodape__botaoEnviar botao">Enviar mensagem</button>               
+                <button class="rodape__botaoEnviar botao" id="formularioFaleConosco__btnEnviar">Enviar mensagem</button>               
             </form>
         </div>      
-    </footer>
+    </footer>    
+    
+    <script type="module" src="../scripts/componentes/formularioFaleConosco.js"></script>
 </body>
+</html>
