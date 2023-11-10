@@ -26,7 +26,7 @@ formularioLogin.addEventListener('submit', evento =>{
 
 const VerificarErros = [
     'valueMissing',
-    'toShort',
+    'tooShort',
     'patternMismatch'
 ]
 

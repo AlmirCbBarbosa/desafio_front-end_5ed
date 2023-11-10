@@ -41,31 +41,30 @@
 
                 <div class="formularioProduto__entrada">
                     <label for="formularioProduto__caixaEntradaURL" class="formularioProduto__label">URL da imagem</label>
-                    <input type="url" class="formularioProduto__caixaEntrada" id="formularioProduto__caixaEntradaURL" name="imagem">
-                    <p class="formularioProduto__mensagemErro">erro produtoImagem</p>
+                    <input type="url" class="formularioProduto__caixaEntrada" id="formularioProduto__caixaEntradaURL" name="Imagem" minlength="5" required entrada-adicionarProdutos>
+                    <p class="formularioProduto__mensagemErro"></p>
                 </div>
 
                 <div class="formularioProduto__entrada">
                     <label for="formularioProduto__caixaEntradaCategoria" class="formularioProduto__label">Categoria</label>
-                    <input type="text" class="formularioProduto__caixaEntrada" id="formularioProduto__caixaEntradaCategoria" name="categoria">
-                    <p class="formularioProduto__mensagemErro">erro produtoCategoria</p>
+                    <input type="text" class="formularioProduto__caixaEntrada" id="formularioProduto__caixaEntradaCategoria" name="Categoria" minlength="2" required entrada-adicionarProdutos>
+                    <p class="formularioProduto__mensagemErro"></p>
                 </div>
 
                 <div class="formularioProduto__entrada">
                     <label for="formularioProduto__caixaEntradaNomeProduto" class="formularioProduto__label">Nome do produto</label>
-                    <input type="text" class="formularioProduto__caixaEntrada" id="formularioProduto__caixaEntradaNomeProduto" name="nome">
-                    <p class="formularioProduto__mensagemErro">erro nomeProduto</p>
+                    <input type="text" class="formularioProduto__caixaEntrada" id="formularioProduto__caixaEntradaNomeProduto" name="Nome" minlength="2" maxlength="20" required entrada-adicionarProdutos>
+                    <p class="formularioProduto__mensagemErro"></p>
                 </div>
 
                 <div class="formularioProduto__entrada">
                     <label for="formularioProduto__caixaEntradaPrecoProduto" class="formularioProduto__label">Preço do produto</label>
-                    <input type="number" class="formularioProduto__caixaEntrada" id="formularioProduto__caixaEntradaPrecoProduto" name="preco">
-                    <p class="formularioProduto__mensagemErro">erro produtoPreco</p>
+                    <input type="number" class="formularioProduto__caixaEntrada" id="formularioProduto__caixaEntradaPrecoProduto" name="Preco" required entrada-adicionarProdutos>
+                    <p class="formularioProduto__mensagemErro"></p>
                 </div>
                 
-                <textarea class="formularioProduto__caixaMensagem" id="formularioProduto__caixaEntradaDescricaoProduto" name="descricao" placeholder="Descriçao do produto" aria-label="Descrição do produto">                 
-                </textarea>
-                <p class="formularioProduto__mensagemErro">erro produtoDescricao</p>
+                <textarea class="formularioProduto__caixaMensagem" id="formularioProduto__caixaEntradaDescricaoProduto" name="Descricao" placeholder="Descriçao do produto" aria-label="Descrição do produto" minlength="10" maxlength="150" required entrada-adicionarProdutos></textarea>
+                <p class="formularioProduto__mensagemErro" id="formularioProduto__caixaEntradaDescricaoProduto"></p>
 
                 <button class="formularioProduto__botao botao">Adicionar produto</button>
             </fieldset>
@@ -79,7 +78,7 @@
             </div>
             <nav class="rodape__navegacao">
                 <div class="rodape__navegacaoLogo">
-                    <img class="rodape__logoImagem" src="./arquivos/imagens/Logo.svg" alt="logo Alura Geek" title="logo Alura Geek">
+                    <img class="rodape__logoImagem" src="../arquivos/imagens/Logo.svg" alt="logo Alura Geek" title="logo Alura Geek">
                 </div>
                 <ul class="rodape__listaLinks">
                     <li class="rodape__link"><a class="rodape__ancora" href="#">Quem somos nós</a></li>
